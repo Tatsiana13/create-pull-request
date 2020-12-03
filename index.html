@@ -6,17 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    :root {
+            --img-size: 1000px;
+        }
+        
+        .picture img {
+            height: calc(var(--img-size) / 100*15);
+            filter: grayscale(100%);
+            transition: 1s linear;
+        }
+        
+        .picture img:hover {
+            filter: grayscale(0%);
+            transform: rotate(360deg);
+        }
+        
+        .picture {
+            text-align: center;
+        }
+        
+        .picture1 img {
+            height: calc(var(--img-size) / 100*15);
+            filter: grayscale(100%);
+            transition: 1s linear;
+        }
+        
+        .picture1 img:hover {
+            filter: grayscale(0%);
+            transform: rotateY(-0.2turn);
+        }
+        
+        .picture1 {
+            text-align: center;
+        }
+        
+        .picture2 img {
+            height: calc(var(--img-size) / 100*15);
+            filter: grayscale(100%);
+            transition: 0.5s linear;
+        }
+        
+        .picture2 img {
+            height: calc(var(--img-size) / 100*15);
+            filter: grayscale(100%);
+            transition: 0.5s linear;
+        }
+        
+        .picture2 img:hover {
+            filter: grayscale(0%);
+            transform: rotatez(-0.25turn);
+        }
+        
+        .picture2 {
+            text-align: center;
+        }
 
+    
+</style>
 <body>
+    <div class="picture">
+
     <img src="house.jpg" alt="WoodHouse">
     <img src="xmas.jpg" alt="Christmas Mood">
     <img src="cozy.jpg" alt="Cozy">
+    </div>
+    <div class="picture2">
+
+
     <img src="house.jpg" alt="WoodHouse">
     <img src="xmas.jpg" alt="Christmas Mood">
     <img src="cozy.jpg" alt="Cozy">
+    </div>
+    <div class="picture1">
+
     <img src="house.jpg" alt="WoodHouse">
     <img src="xmas.jpg" alt="Christmas Mood">
     <img src="cozy.jpg" alt="Cozy">
+    </div>
 </body>
 
 </html>
